@@ -21,4 +21,5 @@ you can then run the command ```npm run dev ```
 
 you can set up the port however you like , my default port is 8000. you can use any of the others 
 
+```NOTE :---> THIS aPP is Full oF bUgS , it would be VeRy HelPfUl iF yOu cOuLd sOlvE tHeM ;) pLs Do sOlvE tHeM
 
