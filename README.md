@@ -1,4 +1,4 @@
-# todo-app
+# toDO-aPp
 
 
 This is my First to-do app in backend , ive made the api from a beginner point of view and i have not added professional folder structure , this was intented to make me practice crud operations with a Database ..
