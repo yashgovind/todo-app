@@ -10,7 +10,7 @@ const getAllTask = async (req, res) => {
 }
 
 const DeleteTask = async (req, res) => {
-    const task= await todos.findOneAndDelete(id:req.params.id);
+    const task = await todos.findOneAndDelete({ id: req.params.id });
     if (task) {
         res.send(task).status(200);
     }
