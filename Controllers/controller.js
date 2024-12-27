@@ -25,6 +25,7 @@ const updateTodo = async (req, res) => {
     { _id: req.params.id },
     { content, isCompleted, updatedAt, userId },
     { new: true },
+    req.body;
   );
 
   if (todo) {
