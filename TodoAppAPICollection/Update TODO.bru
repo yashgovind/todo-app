@@ -1,0 +1,17 @@
+meta {
+  name: Update TODO
+  type: http
+  seq: 5
+}
+
+put {
+  url: {{BASE_URL}}/{{TODO_ENDPOINT}}/676ed3e5a4916809badcf209
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "isCompleted": true
+  }
+}

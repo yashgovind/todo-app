@@ -1,0 +1,19 @@
+meta {
+  name: Create TODO
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{BASE_URL}}/{{TODO_ENDPOINT}}/
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "content": "My Shining TODO 5",
+    "isCompleted": "false",
+    "userId": "123"
+  }
+}

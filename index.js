@@ -1,13 +1,23 @@
 import express, { Router } from "express";
-const app = express();
-const port = process.env.PORT || 3000;
+import "dotenv/config";
 
-import {tasks}  from "./router.js";
+// Import the route.
+import { router } from "./Routes/router.js";
+import { todoEndPoint } from "./Utils/Constants.js";
+
+// Create express instance named 'app'
+const app = express();
+
+// To Use JSON Schemas and serializing.
 app.use(express.json());
 
-app.use("/api/v1/tasks", tasks); //tasks routerrrrrrrr routeaaarrrrrr
+// Route the todos handling router to todos endpoint.
+app.use(todoEndPoint , router);
 
+// Get the port from env (from .env file)
+const port = process.env.PORT || 3000;
 
-app.listen(port, () => { // purt is listuning 
-    console.log(`listening at port ${port}`);
+// Start the server.
+app.listen(port, () => {
+  console.log(`listening at port ${port}`);
 });
